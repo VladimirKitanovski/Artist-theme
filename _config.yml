@@ -1,5 +1,7 @@
 # Build settings
 
+avatar: me.jpg
+
 markdown: kramdown
 permalink: pretty
 

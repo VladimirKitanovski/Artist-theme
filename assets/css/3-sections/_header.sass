@@ -1,12 +1,15 @@
 header
-	height: 450px
 	background: url('/universe.jpg') center center
 	background-size: cover
+	padding-bottom: 50px
+
 
 	.logo
 		+size(50px)
 		float: left
 		margin: 10px 0 0 30px
+		background-position: 30px 20px, 50% 50%
+
 
 		path
 			fill: rgba(0,0,0,0.4)
@@ -20,6 +23,10 @@ header
 			margin-left: 20px
 			color: rgba(255,255,255,0.8)
 			@extend %small-bold
+			
+
+			@media only screen and (max-width: 400px)
+				font-size: 10px	
 
 			&:hover
 				color: rgba(0,0,0,0.7)
@@ -40,6 +47,9 @@ header
 			display: inline-block
 			padding: 0.2em 0.5em
 			border: white solid 10px
+			
+		@media only screen and (max-width: 650px)
+			font-size: 38px	
 
 	.kicker
 		@extend %small-bold
@@ -47,6 +57,22 @@ header
 		letter-spacing: 0.05em
 		color: white
 		line-height: 1
+		
+@media (max-width: 650px)
+	header
+		padding-top: 5px
+					
+		nav
+			float: none
+			text-align: center
+			
+		h1
+			padding-top: 0px
+	
+
+
+
+
 
 
 

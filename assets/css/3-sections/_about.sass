@@ -1,42 +1,35 @@
-body
-	background-color: white
-
-h3
-	@extend %small-bold
-	color: black
-	text-align: center
-	padding: 100px 0 30px
-	
 .face-lockup
 	max-width: 780px
 	+display(flex)
 	margin: 0 auto
 	+align-items(center)
-	+justify-content(space-around)
-	
+	+justify-content(space-between)
+
 
 	.face-img
 		background: url('/me.jpg')
+		// border-radius: 50%
+		background-size: cover
+		background-position: center
 		+size(200px)
-		order: 3
+		+order(3)
 		
 	[class^="icon-"]
 		+size(100px)
 		background: #e5eaee
 		border-radius: 50%
-		margin: 0 auto
 		
 		path
 			fill: black
 		
 		&.icon-brush
-			order: 1
+			+order(1)
 		&.icon-code
-			order: 2
+			+order(2)
 		&.icon-camera
-			order: 4
+			+order(4)
 		&.icon-rocket
-			order: 5
+			+order(5)
 			
 @media screen and (max-width: 650px)
 	.face-lockup
@@ -48,13 +41,13 @@ h3
 			
 		.face-img
 			display: block
-			backgroud-position: center center
-			backgroud-repeat: no-repeat
-			width: auto
-			margin-bottom: 30px
+			backgroud:
+				position: center center
+				repeat: no-repeat
+			margin: 0 auto 30px
 			
 		[class^="icon-"]
-			margin: 10px
+			margin: 10px 9%
 			
 
 .blurb
@@ -105,6 +98,7 @@ h3
 			
 %skill-color
 	background: #e5eaee
+	
 		
 		
 	

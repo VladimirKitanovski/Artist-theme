@@ -1,10 +1,10 @@
 <section>
-	
-	<h3>About Me</h3>
+
+	<h3 id="about-me">About Me</h3>
 
 	<div class="face-lockup">
 
-		<div class="face-img"></div>
+		<div class="face-img" style="background-image: url({{ site.data.settings.avatar }});"></div>
 
 		<div class="icon-brush">{% include icons/icon-brush.html %}</div>
 		<div class="icon-code">{% include icons/icon-code.html %}</div>
@@ -13,83 +13,25 @@
 
 	</div>
 
+
 	<div class="blurb">
-		<p><strong>The Tall And Beardy Developer<br>
-		A Poem by Vladimir</strong><br>
-		Whose developer is that? I think I know.
-		Its owner is quite happy though.
-		Full of joy like a vivid rainbow,
-		I watch him laugh. I cry hello.
-
-		He gives his developer a shake,
-		And laughs until her belly aches.
-		The only other sound's the break,
-		Of distant waves and birds awake.
-
-		The developer is tall, beardy and deep,
-		But he has promises to keep,
-		After cake and lots of sleep.
-		Sweet dreams come to him cheap.
-		</p>
+		{{ site.data.settings.blurb }}
 	</div>
 
 	<div class="skill-lockup">
 
+	{% for skill in site.data.settings.skills %}
 		<div class="skill-unit">
-			<div class="skill-label">Communication</div>
-			<div class="skill-icons skill-10">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+			<div class="skill-label">{{ skill.name }}</div>
+			<div class="skill-icons skill-{{ skill.value }}">
+				{% for i in (1..10) %}
+					<span></span>
+				{% endfor %}
 			</div>
 		</div>
 
-		<div class="skill-unit">
-			<div class="skill-label">Organization</div>
-			<div class="skill-icons skill-7">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
+	{% endfor %}
 
-		<div class="skill-unit">
-			<div class="skill-label">Learning</div>
-			<div class="skill-icons skill-11">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">Sales &amp; Marketing</div>
-			<div class="skill-icons skill-11">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">Planning</div>
-			<div class="skill-icons skill-7">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">Visual Design</div>
-			<div class="skill-icons skill-5">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">UX Design</div>
-			<div class="skill-icons skill-8">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
-
-		<div class="skill-unit">
-			<div class="skill-label">Programming</div>
-			<div class="skill-icons skill-7">
-				<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-			</div>
-		</div>
-	</div>
+</div>
 
 </section>
