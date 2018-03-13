@@ -1,0 +1,81 @@
+# Portfolio Settings
+title: Vladimir Kitanovski
+description: DESIGNER // CREATOR // DEVELOPER
+email: vladimirkitanovski22@gmail.com
+
+
+# Menu item list
+
+menu:
+- {name: About Me, url: "#about-me"}
+- {name: Work, url: "#work"}
+- {name: Contact, url: "#contact"}
+
+# Skill list
+
+skills:
+- {name: Communication, value: '10'}
+- {name: Organization, value: '8'}
+- {name: Learning, value: '11'}
+- {name: Sales & Marketing, value: '11'}
+- {name: Planning, value: '7'}
+- {name: Visual Design, value: '8'}
+- {name: UX Design, value: '10'}
+- {name: Programming, value: '8'}
+
+# Change the site default images and content here!
+
+avatar: 'me.jpg'
+blurb:
+    <p><strong>The Tall And Beardy Developer<br>
+    A Poem by Vladimir</strong><br><br>
+    Whose developer is that? I think I know.
+    Its owner is quite happy though.
+    Full of joy like a vivid rainbow,
+    I watch him laugh. I cry hello.
+    <br><br>
+    He gives his developer a shake,
+    And laughs until her belly aches.
+    The only other sound's the break,
+    Of distant waves and birds awake.
+    <br><br>
+    The developer is <a href="https://www.instagram.com/p/BcVjDdFFY8n/?taken-by=vladimir_kitanovski">tall, beardy and deep</a>,
+    But he has promises to keep,
+    After cake and lots of sleep.
+    Sweet dreams come to him cheap.
+    </p>
+
+# Work Section
+
+projects:
+- {name: Twitter API Bot, folder: 'proj1'}
+- {name: Web Development, folder: 'proj2'}
+- {name: Sales & Marketing, folder: 'proj3'}
+- {name: Sentiment Analysis, folder: 'proj4'}
+
+
+# Contact Section
+
+social:
+- {icon: 'fa fa-twitter', link: 'https://twitter.com/vladimir586'}
+- {icon: 'fa fa-github', link: 'https://github.com/VladimirKitanovski'}
+- {icon: 'fa fa-instagram', link: 'https://www.instagram.com/vladimir_kitanovski/'}
+- {icon: 'fa fa-linkedin', link: 'https://www.linkedin.com/in/vladimir-kitanovski/'}
+
+# Can be any icon from FontAwesome.io
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
