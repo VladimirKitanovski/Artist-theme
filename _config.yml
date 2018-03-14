@@ -8,5 +8,5 @@ permalink: pretty
 port: 3000
 
 sass:
-  sass_dir: _sass
+  sass_dir: _scss
   style: :compressed
